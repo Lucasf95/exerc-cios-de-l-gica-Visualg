@@ -1,0 +1,29 @@
+Algoritmo "senha_fixa"
+
+Var
+// Variáveis
+
+   senha : inteiro
+
+
+Inicio
+
+      escreval("Digite a senha: ")
+      leia(senha)
+      
+      enquanto senha <> 2002 faca
+      
+               se senha <> 2002 entao // Inicia um loop que se repete enquanto a senha inserida for diferente de 2002
+                  escreval("Senha Invalida! Tente novamente: ") // Exibe uma mensagem informando que a senha é inválida e solicita que o usuário insira novamente
+                  leia(senha)
+               fimse
+               
+               
+      fimenquanto
+      
+
+      escreval("Acesso permitido!") // Exibe a mensagem "Acesso permitido!" quando a senha correta é inserida
+
+
+
+Fimalgoritmo
