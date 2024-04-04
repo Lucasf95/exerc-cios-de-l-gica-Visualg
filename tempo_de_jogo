@@ -1,0 +1,30 @@
+Algoritmo "tempo_de_jogo"
+
+Var
+// Seção de Declarações das variáveis 
+
+   horaInicial, horaFinal, duracao : inteiro
+
+Inicio
+
+      escreva("Hora inicial: ")
+      leia(horaInicial)
+      escreva("Hora final: ")
+      leia(horaFinal)
+
+// Verifica se o jogo terminou no mesmo dia ou no próximo dia, e então calcula duração do jogo
+      se horaFinal < horaInicial então
+         duracao <- horaFinal + (24 - horaInicial)
+      senao
+           se horaFinal = horaInicial entao
+              duracao <- 24
+           senao
+              duracao <- horaFinal - horaInicial
+           fimse
+      fimse
+      
+      escreval("O jogo durou: ", duracao:2:2, " hora(s)")
+      
+
+
+Fimalgoritmo
