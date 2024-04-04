@@ -1,0 +1,43 @@
+Algoritmo "coordenadas"
+
+Var
+
+   x, y : real
+   ponto : caractere
+
+Inicio
+
+      escreva("valor de X: ")
+      leia(x)
+      escreva("valor de Y: ")
+      leia(y)
+
+      se (x > 0) e (y > 0) entao
+         ponto <- "Q1"
+      senao
+           se (x > 0) e (y < 0) entao
+              ponto <- "Q4"
+           senao
+                se (x <> 0) e (y = 0) entao
+                   ponto <- "Eixo X"
+                senao
+                     se (x <  0) e (y > 0) entao
+                        ponto <- "Q2"
+                     senao
+                          se (x < 0) e (y < 0) entao
+                             ponto <- "Q3"
+                          senao
+                               se ( x = 0) e (y <> 0) entao
+                                  ponto <- "Eixo Y"
+                               senao
+                                    ponto <- "origem"
+                               fimse
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+
+      escreval("O ponto esta na : ", ponto)
+
+Fimalgoritmo
